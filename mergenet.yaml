@@ -3,11 +3,12 @@ eth1_premine:
   "m/44'/60'/0'/0/0": 10000000ETH
   "m/44'/60'/0'/0/1": 10000000ETH
   "m/44'/60'/0'/0/2": 10000000ETH
-chain_id: 700
+chain_id: 789
 deposit_contract_address: "0x4242424242424242424242424242424242424242"
+withdrawal_contract_address: "0x4343434343434343434343434343434343434343"
 # either 'minimal' or 'mainnet'
 eth2_base_config: minimal
 eth2_fork_version: "0x00000700"
-eth1_genesis_timestamp: GENESIS_TIMESTAMP
+eth1_genesis_timestamp: 1623650512
 # Tweak this. actual_genesis_timestamp = eth1_genesis_timestamp + eth2_genesis_delay
 eth2_genesis_delay: 600

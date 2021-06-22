@@ -23,7 +23,7 @@ python -m venv venv
 pip install -r requirements.txt
 
 # Install eth2-testnet-genesis tool (Go 1.16+ required)
-go install github.com/protolambda/eth2-testnet-genesis@latest
+go install github.com/zilm13/eth2-testnet-genesis@068d0f9eff0b56e6b2b90b9bdad23de9f1447ac5
 # Install eth2-val-tools
 go install github.com/protolambda/eth2-val-tools@latest
 # You are now in the right directory to run the setupenv commands below.
