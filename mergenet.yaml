@@ -9,6 +9,6 @@ withdrawal_contract_address: "0x4343434343434343434343434343434343434343"
 # either 'minimal' or 'mainnet'
 eth2_base_config: minimal
 eth2_fork_version: "0x00000700"
-eth1_genesis_timestamp: 1623650512
+eth1_genesis_timestamp: GENESIS_TIMESTAMP
 # Tweak this. actual_genesis_timestamp = eth1_genesis_timestamp + eth2_genesis_delay
 eth2_genesis_delay: 600
