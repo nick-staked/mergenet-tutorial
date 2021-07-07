@@ -270,7 +270,7 @@ one validator, its `line - 1` will be a validator index, remember it, you will n
 later. Submit validator exit. In Teku it will look like this:
 ```bash
 ./teku voluntary-exit \
-  --validator-keys="$TESTNET_NAME/private/valclient0/teku-keys/0xb8747871053f40070805ad2773328b834613292ce02aa29b030a99dfb114be26a42de8d4f9fef36dc60050c77771991d.json:$TESTNET_NAME/private/valclient0/teku-secrets/0xb8747871053f40070805ad2773328b834613292ce02aa29b030a99dfb114be26a42de8d4f9fef36dc60050c77771991d.txt"
+  --validator-keys="${PWD}/$TESTNET_NAME/private/valclient0/teku-keys/0xb8747871053f40070805ad2773328b834613292ce02aa29b030a99dfb114be26a42de8d4f9fef36dc60050c77771991d.json:${PWD}/$TESTNET_NAME/private/valclient0/teku-secrets/0xb8747871053f40070805ad2773328b834613292ce02aa29b030a99dfb114be26a42de8d4f9fef36dc60050c77771991d.txt"
 ```
 Json-file with the name equal to public key contains encrypted validators private key
 data and txt-file contains password for decryption. After the exit is submitted, 
