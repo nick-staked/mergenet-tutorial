@@ -12,5 +12,5 @@ RUN apt-get install -y curl
 RUN curl https://dl.google.com/go/go1.16.3.linux-amd64.tar.gz | tar -xz -C /usr/local
 ENV PATH=$PATH:/usr/local/gopath/bin:/usr/local/go/bin GOPATH=/usr/local/gopath
 
-RUN go install github.com/protolambda/eth2-testnet-genesis@latest
+RUN go install github.com/zilm13/eth2-testnet-genesis@068d0f9eff0b56e6b2b90b9bdad23de9f1447ac5
 RUN go install github.com/protolambda/eth2-val-tools@latest
