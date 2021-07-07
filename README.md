@@ -132,7 +132,7 @@ keystore, you should just unlock it:
 > web3.personal.unlockAccount("0x5c1fd166fe8d490fdc83d7c32a77711930cc615d", "yourpassword", 10000)
 > exit
 ```
-Use following contract ABI for withdrawals system contract:
+Use following contract ABI for **Withdrawals System Contract**:
 ```javascript
 var withdrawalsContract = {
   "abi": [
@@ -251,6 +251,7 @@ var withdrawalsContract = {
   ]
 }
 ```
+[Sources](https://github.com/zilm13/SerenityPool/blob/70ee51ae072477e84f881a2c08a1a792e52b5609/contracts/SystemContract.sol) of **Withdrawals Contract**.  
 You need to initialize **Withdrawals Contract** in **Web3.js** console or using 
 a similar tool. Contract address is defined in `mergenet.yaml`.
 ```javascript

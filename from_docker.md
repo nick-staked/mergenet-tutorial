@@ -136,13 +136,12 @@ docker run \
 
 Alternatively you could run Teku locally with validators in a single command
 ```shell
-NODE_PATH="$TESTNET_PATH/nodes/teku0lv"
+NODE_PATH="$TESTNET_NAME/nodes/teku0lv"
 mkdir -p "$NODE_PATH"
-cp -r "$TESTNET_PATH/private/validator0/teku-keys" "$NODE_PATH/keys"
-cp -r "$TESTNET_PATH/private/validator0/teku-secrets" "$NODE_PATH/secrets"
-mkdir -p ${PWD}/$TESTNET_NAME/nodes/teku0lv
+cp -r "$TESTNET_NAME/private/valclient0/teku-keys" "$NODE_PATH/keys"
+cp -r "$TESTNET_NAME/private/valclient0/teku-secrets" "$NODE_PATH/secrets"
 docker run \
-  --name teku0bn \
+  --name teku0lv \
   -u $(id -u):$(id -g) --net host \
   -v ${PWD}/$TESTNET_NAME/nodes/teku0lv:/validatordata \
   -v ${PWD}/$TESTNET_NAME/public/eth2_config.yaml:/networkdata/eth2_config.yaml \
