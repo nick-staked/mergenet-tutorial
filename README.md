@@ -251,7 +251,7 @@ var withdrawalsContract = {
   ]
 }
 ```
-[Sources](https://github.com/zilm13/SerenityPool/blob/70ee51ae072477e84f881a2c08a1a792e52b5609/contracts/SystemContract.sol) of **Withdrawals Contract**.  
+[Withdrawal System Contract sources](https://github.com/zilm13/SerenityPool/blob/70ee51ae072477e84f881a2c08a1a792e52b5609/contracts/SystemContract.sol) are compiled with [Solidity fork](https://github.com/zilm13/solidity/tree/19dc0702a981b15d57341d905b949e243868cd6f) enabling BEACONBLOCKROOT opcode.   
 You need to initialize **Withdrawals Contract** in **Web3.js** console or using 
 a similar tool. Contract address is defined in `mergenet.yaml`.
 ```javascript
