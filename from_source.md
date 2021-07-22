@@ -63,7 +63,7 @@ See [docker instructions](./from_docker.md#initialization) for details.
   --nodiscover \
   --allow-insecure-unlock \
   --miner.etherbase 0x1000000000000000000000000000000000000000 \
-  --datadir "${PWD/clients/geth/chaindata"
+  --datadir "${PWD}/clients/geth/chaindata"
 ```
 
 ----
